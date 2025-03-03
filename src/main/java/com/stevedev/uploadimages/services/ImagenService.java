@@ -120,7 +120,7 @@ public class ImagenService {
                 .orElseThrow(() -> new ResourceNotFoundException("Imagen con id " + imagenId + " no encontrada"));
 
         // Verificar que la imagen pertenezca al producto
-        if (!producto.getImagenes().contains(imagen)) {
+        if (!imagen.getProducto().getId().equals(producto.getId())) {
             throw new ResourceNotFoundException("La imagen con id " + imagenId + " no pertenece al producto con id " + productoId);
         }
 
