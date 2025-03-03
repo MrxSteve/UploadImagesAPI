@@ -41,3 +41,10 @@ Para poder utilizar la API es necesario configurar las siguientes variables de e
 - **DATABASE_URL**: URL de la base de datos
 - **DATABASE_USERNAME**: Usuario de la base de datos
 - **DATABASE_PASSWORD**: Contraseña de la base de datos
+
+## Probar la API
+Una vez configuradas las variables de entorno, ejecutar el proyecto y probar los endpoints con Postman o 
+cualquier otra herramienta de pruebas de APIs.
+
+### Para probarla en Swagger
+Link: http://localhost:8080/swagger-ui/index.html#/
